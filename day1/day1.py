@@ -1,3 +1,5 @@
+import time
+
 input_file = "input.txt"
 total = 2020
 numbers = []
@@ -21,8 +23,14 @@ def part_two(numbers):
 			if tmp in numbers:
 				return(tmp * numbers[i] * numbers[j])
 
-
+start = time.time()
 solution_one = part_one(numbers)
 print (solution_one)
+end = time.time()
+print (end-start)
+
+start = time.time()
 solution_two = part_two(numbers)
 print (solution_two)
+end = time.time()
+print (end-start)
