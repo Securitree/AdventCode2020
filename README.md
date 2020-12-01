@@ -1,2 +1,5 @@
 # AdventCode2020
-AdventCode2020 challenge https://adventofcode.com/2020
+Solution to AdventCode2020 challenge. All scripts are written in Python3.
+
+References:
+https://adventofcode.com/2020 
