@@ -7,7 +7,7 @@ number_set = set()
 with open (input_file,"r") as f:
 	for line in f:
 		number_list.append(int(line)) 
-        number_set.add(int(line))
+		number_set.add(int(line))
 
 def part_one(number_list):
 	for number in number_list:
