@@ -7,14 +7,14 @@ with open (input_file,"r") as f:
 		number_list.append(int(line)) 
 	number_set = set(number_list)
 
-def part_one(number_list):
+def part_one(number_list, number_set):
 	for number in number_list:
 		tmp = total - number
 		if tmp in number_set:
-			return = tmp * number
+			return(tmp * number)
 
 
-def part_two(number_list):
+def part_two(number_list, number_set):
 	for i in range (0,len(number_list)):
 		tmp_one = total - number_list[i]
 		for j in range (i+1,len(number_list)):
