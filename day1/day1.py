@@ -10,7 +10,7 @@ def part_one(numbers):
 	for number in numbers:
 		tmp = total - number
 		if tmp in numbers:
-			return = tmp * number
+			return(tmp * number)
 
 
 def part_two(numbers):
