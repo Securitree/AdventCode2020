@@ -1,5 +1,3 @@
-import re
-
 input_file = "input.txt"
 right = 3
 
