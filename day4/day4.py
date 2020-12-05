@@ -35,39 +35,5 @@ def part_one(data):
 	return valid
 
 
-def check_fields(key,value):
-	import re
-	hgt_pattern = "\\d+(cm|in)"
-	hcl_pattern = "#[a-f0-9]{6}"
-	ecl_list = ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"]
-	pid_pattern = "\\d{9}"
-	try:
-		if key == "byr":
-			if 1920 <= value <= 2002:
-				return True
-		if key == "iyr":
-			if 2010 <= value <= 2020:
-				return True
-		if key == "eyr":
-			if 20200 <= value <= 2030:
-				return True
-		if key == "hgt":
-			if re.search(hgt_pattern, value):
-				numbers,letters = re.split('(\\d+)',value)
-				if ((letters == "cm") and ( 150 <= numbers <= 193)) or ((letters == "in") and ( 59 <= numbers <= 76)):
-					return True
-		if key == "hcl":
-			if re.search(hcl_pattern, value):
-				return True
-		if key == "ecl":
-			if value in ecl_list:
-				return True
-		if key == "pid":
-			if re.search(pid_pattern, value):
-				return True
-	except:
-		return False
-
-
 solution_one = part_one(data)
 print (solution_one)
