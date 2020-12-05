@@ -1,21 +1,3 @@
-#BFFFBBFRRR: row 70, column 7, seat ID 567.
-#FFFBBBFRRR: row 14, column 7, seat ID 119.
-#BBFFBBFRLL: row 102, column 4, seat ID 820.
-'''
-For example, consider just the last 3 characters of FBFBBFF RLR:
-
-Start by considering the whole range, columns 0 through 7.
-
-R means to take the upper half, keeping columns 4 through 7.
-L means to take the lower half, keeping columns 4 through 5.
-R keeps the upper of the two, column 5.
-
-So, decoding FBFBBFFRLR reveals that it is the seat at row 44, column 5.
-
-Every seat also has a unique seat ID: multiply the row by 8, then add the column. In this example, the seat has ID 44 * 8 + 5 = 357.
-'''
-
-
 with open("input.txt","r") as f:
     data = f.readlines()
     
