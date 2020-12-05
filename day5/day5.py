@@ -1,7 +1,7 @@
 with open("input.txt","r") as f:
     data = f.readlines()
     
-def part_one(data):
+def find_id(data):
     boarding_id = 0
     boarding_list = []
     for line in data:
@@ -50,7 +50,7 @@ def find_seat(boarding_id, boarding_list):
                 if item -1 not in boarding_set:
                     return item-1
 
-boarding_id, boarding_list = part_one(data)
+boarding_id, boarding_list = find_id(data)
 #solution part 1
 print (boarding_id)
 
