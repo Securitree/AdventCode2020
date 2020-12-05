@@ -45,9 +45,6 @@ def find_seat(boarding_id, boarding_list):
         if item + 2 in boarding_set:
             if item +1 not in boarding_set:
                 return item+1
-        if item -2 in boarding_set:
-            if item -1 not in boarding_set:
-                return item-1
 
 boarding_id, boarding_list = find_id(data)
 #solution part 1
