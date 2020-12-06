@@ -1,12 +1,6 @@
 with open ("input.txt","r") as f:
      data = f.read().split("\n\n")
 
-def create_set(item):
-    item_set = set()
-    for char in item:
-        item_set.add(char)
-    return item_set
-
 def create_list(item):
     item_list = []
     for elem in item:
@@ -21,7 +15,7 @@ def find_answers(item_list):
 def anyone_yes(data):
     count = 0
     for item in data:
-        item_set = create_set(item.replace("\n",""))
+        item_set = set(item.replace("\n",""))
         count += len(item_set)
     return count
 
